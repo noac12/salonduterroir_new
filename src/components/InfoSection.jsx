@@ -1,4 +1,4 @@
-import moneyIcon from '../assets/money.png';
+import moneyIcon from '../assets/tarifs.png';
 
 const InfoSection = () => {
     return (
