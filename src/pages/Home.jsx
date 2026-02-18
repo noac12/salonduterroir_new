@@ -4,6 +4,10 @@ import InfoSection from '../components/InfoSection';
 
 const Home = () => {
     useEffect(() => {
+        document.title = 'Salon du Terroir 2026 | Télécom Paris – Vin, Gastronomie et Artisanat';
+    }, []);
+
+    useEffect(() => {
         const handler = (e) => {
             if (e.data && e.data.height) {
                 const widget = document.getElementById('haWidget');

@@ -12,7 +12,7 @@ const InfoSection = () => {
                     <p>Vendredi 27 Mars 2026</p>
                     <p className="info-highlight">14h - 19h</p>
                     <p>Samedi 28 Mars 2026</p>
-                    <p className="info-highlight">10h - 18h</p>
+                    <p className="info-highlight">10h - 19h</p>
                 </div>
 
                 <div className="info-card">

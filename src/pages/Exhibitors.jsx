@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Exhibitors = () => {
+    useEffect(() => {
+        document.title = 'Exposants | Salon du Terroir 2026 – Télécom Paris';
+    }, []);
     return (
         <main className="exhibitors-page">
             <div className="container" style={{ textAlign: 'center', minHeight: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
