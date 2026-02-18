@@ -1,0 +1,66 @@
+import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="logo">
+          <Link to="/" className="logo-link" onClick={closeMenu}>
+            Salon du Terroir
+            <span className="subtitle">Télécom Paris</span>
+          </Link>
+        </div>
+
+        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
+          {isMenuOpen ? '✕' : '☰'}
+        </button>
+
+        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+          <ul className="nav-list">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={closeMenu}
+              >
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/exhibitors"
+                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={closeMenu}
+              >
+                Exposants
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/services"
+                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={closeMenu}
+              >
+                Nos Services
+              </NavLink>
+            </li>
+            <li><a href="/#infos" className="nav-link" onClick={closeMenu}>Infos Pratiques</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
