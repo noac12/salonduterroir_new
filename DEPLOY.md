@@ -11,7 +11,11 @@ Ce fichier documente la procédure pour mettre à jour le site web `salonduterro
 
 1.  **Développement Local**
     Faites vos modifications en local, testez avec `npm run dev`.
-
+    # Si SSH ne marche pas, utilisez HTTPS :
+    # git clone https://github.com/Petitfilou36/salonduterroir_new.git
+    
+    # Clé de déploiement (Ajouter dans Settings > Deploy keys) :
+    # ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF+6FZRhdlZaz5KdP5RhrXnCIifPz5hYiilQ4GnSg0OU server_deploy_key
 2.  **Push vers GitHub**
     Commitez et poussez vos changements sur la branche principale.
     ```bash
@@ -40,8 +44,10 @@ Ce fichier documente la procédure pour mettre à jour le site web `salonduterro
     npm run build
 
     # 6. Mettre en ligne (Remplacer l'ancien site)
-    # Copie le contenu de dist/ vers le dossier public du serveur web
-    rsync -av --delete dist/ /var/www/html/
+    # Supprime l'ancien contenu
+    rm -rf /var/www/html/*
+    # Copie le nouveau contenu
+    cp -r dist/* /var/www/html/
     ```
 
 ## En cas de problème
