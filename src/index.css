@@ -218,6 +218,23 @@ img {
   padding: 1rem 2rem;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.hero-btn-secondary:hover {
+  background-color: #f0f0f0;
+  color: var(--color-primary);
+}
+
 
 /* Info Section */
 .info-section {

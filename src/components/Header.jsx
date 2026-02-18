@@ -55,7 +55,7 @@ const Header = () => {
                 Nos Services
               </NavLink>
             </li>
-            <li><a href="/#infos" className="nav-link" onClick={closeMenu}>Infos Pratiques</a></li>
+            <li><a href="/#access" className="nav-link" onClick={closeMenu}>Infos Pratiques</a></li>
           </ul>
         </nav>
       </div>
