@@ -1,4 +1,5 @@
 export const categories = [
+    //Thomas tu peux changer les catégories vu que tu connais mieux les exposants.
     "Vin",
     "Champagne",
     "Viande et charcuterie",
