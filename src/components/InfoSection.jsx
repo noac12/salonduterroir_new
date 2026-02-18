@@ -1,4 +1,4 @@
-import React from 'react';
+import moneyIcon from '../assets/money.png';
 
 const InfoSection = () => {
     return (
@@ -26,7 +26,7 @@ const InfoSection = () => {
                 </div>
                 <div className="info-card">
                     <img
-                        src="/src/assets/money.png"
+                        src={moneyIcon}
                         alt="Tarifs"
                         className="info-icon"
                     />
