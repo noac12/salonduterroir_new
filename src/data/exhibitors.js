@@ -19,4 +19,238 @@ export const exhibitors = [
     //     website: "https://www.example.com",  // URL du site web (optionnel)
     //     logo: "/logos/nom-exposant.png"       // Chemin vers le logo (optionnel). Ici, /logos/nom-exposant.png veut dire public//logos/nom-exposant.png
     // },
+    {
+        "id": 1,
+        "name": "Choco and Co",
+        "category": "chocolat",
+        "region": "Essonne",
+        "description": "Artisan chocolatier proposant des créations originales et gourmandes.",
+        "website": "https://arnaud-dupuis.com/",
+        "logo": null
+    },
+    {
+        "id": 2,
+        "name": "Denis Bourgin",
+        "category": "Chataîgnes",
+        "region": "Dordogne",
+        "description": "Producteur de châtaignes en Dordogne",
+        "website": "",
+        "logo": null
+    },
+    {
+        "id": 3,
+        "name": "château Le Brézéguet",
+        "category": "Vin",
+        "region": "Lot",
+        "description": "Producteur de vin de Cahors et Côtes du Lot",
+        "website": "https://www.chateaulebrezeguet.fr/",
+        "logo": null
+    },
+    {
+        "id": 4,
+        "name": "Zoe Biomad",
+        "category": "épicerie fine",
+        "region": "Yvelines",
+        "description": "Sélection de produits d'épicerie fine, épices et saveurs du monde.",
+        "website": "",
+        "logo": null
+    },
+    {
+        "id": 5,
+        "name": "Merlet",
+        "category": "Vin",
+        "region": "Bordeaux",
+        "description": "Producteur de vin dans la région de Bordeaux",
+        "website": "https://www.scea-vignobles-merlet.net/fr/",
+        "logo": null
+    },
+    {
+        "id": 6,
+        "name": "Frenchic Attitude",
+        "category": "épicerie fine",
+        "region": "",
+        "description": "Sélection de produits d'artisans Français",
+        "website": "https://frenchicattitude.fr",
+        "logo": null
+    },
+    // {
+    //     "id": 7,
+    //     "name": "drouet",
+    //     "category": "charcuterie",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
+    {
+        "id": 8,
+        "name": "La Doussiniere",
+        "category": "Vin",
+        "region": "Dordogne",
+        "description": "Vins rouges bio de vieilles vignes au coeur du Périgord",
+        "website": "https://ladoussiniere.fr/",
+        "logo": null
+    },
+    {
+        "id": 9,
+        "name": "brimont",
+        "category": "Champagne",
+        "region": "Reims",
+        "description": "Entreprise familiale productrice de Champagne",
+        "website": "https://www.champagnebrimont.fr/",
+        "logo": null
+    },
+    {
+        "id": 10,
+        "name": "bois de corail",
+        "category": "rhum arrangé",
+        "region": "",
+        "description": "Créateur de rhums arrangés",
+        "website": "https://www.boisdecorail.fr/",
+        "logo": null
+    },
+    {
+        "id": 11,
+        "name": "Mes Délices 91",
+        "category": "épicerie fine",
+        "region": "Essonne",
+        "description": "Sélection raffinée de produits d'épicerie fine et condiments du monde.",
+        "website": "",
+        "logo": null
+    },
+    {
+        "id": 12,
+        "name": "Inkraft Beer Company",
+        "category": "Bière",
+        "region": "Essonne",
+        "description": "Brasseur artisanal proposant une gamme de bières originales",
+        "website": "",
+        "logo": null
+    },
+    {
+        "id": 13,
+        "name": "La savonnerie du gatinais",
+        "category": "Savon",
+        "region": "Essonne",
+        "description": "Savons artisanaux crées au sein du parc du Gâtinais",
+        "website": "https://lasavonneriedugatinais.fr/",
+        "logo": null
+    },
+    {
+        "id": 14,
+        "name": "Domaine Tour Scala",
+        "category": "Vin",
+        "region": "Aude",
+        "description": "Vigneron indépendant producteur de vins issus des Corbières",
+        "website": "https://www.domainetourscala.fr/",
+        "logo": null
+    },
+    {
+        "id": 15,
+        "name": "Apihappy",
+        "category": "miel",
+        "region": "Essonne",
+        "description": "Apiculteur récoltant proposant des miels naturels et produits de la ruche.",
+        "website": "https://apihappy.fr",
+        "logo": null
+    },
+    {
+        "id": 16,
+        "name": "Champagne Marcel Vézien",
+        "category": "Champagne",
+        "region": "Champagne",
+        "description": "Maison de Champagne familiale élaborant des cuvées d'exception.",
+        "website": "https://champagne-vezien.com/",
+        "logo": null
+    },
+    {
+        "id": 17,
+        "name": "Domaine Gogué",
+        "category": "Vin",
+        "region": "Centre Val de Loire",
+        "description": "Producteur de Sauvignon et de Pinôt Noir",
+        "website": "www.cavegogue.fr",
+        "logo": null
+    },
+    // {
+    //     "id": 18,
+    //     "name": "Inconnu",
+    //     "category": "nougat",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
+    // {
+    //     "id": 19,
+    //     "name": "cedric corses",
+    //     "category": "produit corse",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
+    {
+        "id": 20,
+        "name": "Maison Romy",
+        "category": "Pâtisseries et confiseries",
+        "region": "",
+        "description": "Pâtisseries fines, confiseries et produits d’épicerie fine artisanaux, ",
+        "website": "https://maisonromy.com/",
+        "logo": null
+    },
+    {
+        "id": 21,
+        "name": "Domaine du Trait Vert",
+        "category": "Vin",
+        "region": "Muscadet",
+        "description": "Producteur de Muscadet",
+        "website": "https://www.domainedutraitvert.com/",
+        "logo": null
+    },
+    // {
+    //     "id": 22,
+    //     "name": "Inconnu",
+    //     "category": "empegnadas",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
+    {
+        "id": 23,
+        "name": "Domaine Lou Gaillot",
+        "category": "Vin",
+        "region": "Lot",
+        "description": "Producteur de vins de cépages du Bordelais et du Bergeracois",
+        "website": "https://www.lougaillot.com/",
+        "logo": null
+    },
+    // {
+    //     "id": 24,
+    //     "name": "Inconnu",
+    //     "category": "madagascar",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
+    // {
+    //     "id": 25,
+    //     "name": "Inconnu",
+    //     "category": "fruit",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
+    // {
+    //     "id": 26,
+    //     "name": "Inconnu",
+    //     "category": "bretzel",
+    //     "region": "",
+    //     "description": "",
+    //     "website": "",
+    //     "logo": null
+    // },
 ];
