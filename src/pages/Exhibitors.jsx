@@ -1,32 +1,66 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import ExhibitorCard from '../components/ExhibitorCard';
+import { exhibitors, categories } from '../data/exhibitors';
 
 const Exhibitors = () => {
+    const [selectedCategory, setSelectedCategory] = useState('Toutes');
+
     useEffect(() => {
         document.title = 'Exposants | Salon du Terroir 2026 – Télécom Paris';
     }, []);
+
+    const filteredExhibitors = selectedCategory === 'Toutes'
+        ? exhibitors
+        : exhibitors.filter(exhibitor => exhibitor.category === selectedCategory);
+
     return (
         <main className="exhibitors-page">
-            <div className="container" style={{ textAlign: 'center', minHeight: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <h1 style={{ marginBottom: '2rem' }}>Nos Exposants 2026</h1>
+            <div className="container">
+                <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>Nos Exposants 2026</h1>
 
-                <div style={{ backgroundColor: 'var(--color-bg)', padding: '3rem', borderRadius: '8px', border: '1px solid #eee', maxWidth: '800px' }}>
-                    <p style={{ fontSize: '1.5rem', color: 'var(--color-primary)', marginBottom: '1.5rem', fontFamily: 'var(--font-heading)' }}>
-                        La liste des exposants 2026 est en cours de préparation.
-                    </p>
-                    <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-                        Nous sélectionnons actuellement les meilleurs producteurs pour vous offrir une expérience inoubliable.
-                        Revenez bientôt pour découvrir la liste complète !
-                    </p>
+                {/* Filters */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginBottom: '3rem' }}>
+                    <button
+                        onClick={() => setSelectedCategory('Toutes')}
+                        className={`btn ${selectedCategory === 'Toutes' ? '' : 'btn-outline'}`}
+                        style={{ padding: '0.5rem 1.5rem', borderRadius: '50px' }}
+                    >
+                        Toutes
+                    </button>
+                    {categories.map(category => (
+                        <button
+                            key={category}
+                            onClick={() => setSelectedCategory(category)}
+                            className={`btn ${selectedCategory === category ? '' : 'btn-outline'}`}
+                            style={{ padding: '0.5rem 1.5rem', borderRadius: '50px' }}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
 
-                    <div style={{ marginTop: '2rem', padding: '2rem', backgroundColor: 'var(--color-white)', borderRadius: '8px' }}>
-                        <h3 style={{ marginBottom: '1rem', color: 'var(--color-secondary)' }}>Vous souhaitez exposer ?</h3>
-                        <p style={{ marginBottom: '1rem' }}>
-                            Il reste encore quelques places disponibles pour notre édition 2026.
+                {/* Grid */}
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
+                    {filteredExhibitors.length > 0 ? (
+                        filteredExhibitors.map(exhibitor => (
+                            <ExhibitorCard key={exhibitor.id} exhibitor={exhibitor} />
+                        ))
+                    ) : (
+                        <p style={{ gridColumn: '1 / -1', textAlign: 'center', fontSize: '1.2rem', color: '#666' }}>
+                            Aucun exposant trouvé dans cette catégorie pour le moment.
                         </p>
-                        <a href="mailto:contact@salonduterroir.fr" className="btn">
-                            Contactez-nous à contact@salonduterroir.fr
-                        </a>
-                    </div>
+                    )}
+                </div>
+
+                {/* Contact Section */}
+                <div style={{ marginTop: '4rem', padding: '3rem', backgroundColor: 'var(--color-bg)', borderRadius: '8px', textAlign: 'center' }}>
+                    <h3 style={{ marginBottom: '1rem', color: 'var(--color-primary)' }}>Vous souhaitez exposer ?</h3>
+                    <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>
+                        Il reste encore quelques places disponibles pour notre édition 2026.
+                    </p>
+                    <a href="mailto:contact@salonduterroir.fr" className="btn">
+                        Contactez-nous à contact@salonduterroir.fr
+                    </a>
                 </div>
             </div>
         </main>

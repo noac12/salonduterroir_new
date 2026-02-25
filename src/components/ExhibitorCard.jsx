@@ -2,11 +2,26 @@ import React from 'react';
 
 const ExhibitorCard = ({ exhibitor }) => {
     return (
-        <div className="exhibitor-card">
-            <h3 className="exhibitor-name">{exhibitor.name}</h3>
-            <p className="exhibitor-region">{exhibitor.region}</p>
-            <div className="exhibitor-badge">{exhibitor.category}</div>
-            <p style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>{exhibitor.description}</p>
+        <div className="exhibitor-card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+            {exhibitor.logo && (
+                <div style={{ height: '140px', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '1rem', backgroundColor: '#fff', borderBottom: '1px solid #eee' }}>
+                    <img src={exhibitor.logo} alt={`Logo ${exhibitor.name}`} style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'contain' }} />
+                </div>
+            )}
+            <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                <h3 className="exhibitor-name" style={{ marginBottom: '0.5rem' }}>{exhibitor.name}</h3>
+                {exhibitor.region && <p className="exhibitor-region" style={{ color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: '1rem' }}>{exhibitor.region}</p>}
+
+                <div className="exhibitor-badge" style={{ alignSelf: 'flex-start', marginBottom: '1rem' }}>{exhibitor.category}</div>
+
+                <p style={{ fontSize: '0.95rem', lineHeight: '1.5', flex: 1 }}>{exhibitor.description}</p>
+
+                {exhibitor.website && (
+                    <a href={exhibitor.website} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '1.5rem', color: 'var(--color-primary)', fontWeight: 'bold', textDecoration: 'underline' }}>
+                        Visiter le site ↗
+                    </a>
+                )}
+            </div>
         </div>
     );
 };
