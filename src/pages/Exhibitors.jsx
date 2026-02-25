@@ -11,7 +11,12 @@ const Exhibitors = () => {
 
     const filteredExhibitors = selectedCategory === 'Toutes'
         ? exhibitors
-        : exhibitors.filter(exhibitor => exhibitor.category === selectedCategory);
+        : exhibitors.filter(exhibitor => {
+            if (Array.isArray(exhibitor.category)) {
+                return exhibitor.category.includes(selectedCategory);
+            }
+            return exhibitor.category === selectedCategory;
+        });
 
     return (
         <main className="exhibitors-page">

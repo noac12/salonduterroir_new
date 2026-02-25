@@ -12,7 +12,15 @@ const ExhibitorCard = ({ exhibitor }) => {
                 <h3 className="exhibitor-name" style={{ marginBottom: '0.5rem' }}>{exhibitor.name}</h3>
                 {exhibitor.region && <p className="exhibitor-region" style={{ color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: '1rem' }}>{exhibitor.region}</p>}
 
-                <div className="exhibitor-badge" style={{ alignSelf: 'flex-start', marginBottom: '1rem' }}>{exhibitor.category}</div>
+                {Array.isArray(exhibitor.category) ? (
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+                        {exhibitor.category.map(cat => (
+                            <div key={cat} className="exhibitor-badge" style={{ marginBottom: 0 }}>{cat}</div>
+                        ))}
+                    </div>
+                ) : (
+                    <div className="exhibitor-badge" style={{ alignSelf: 'flex-start', marginBottom: '1rem' }}>{exhibitor.category}</div>
+                )}
 
                 <p style={{ fontSize: '0.95rem', lineHeight: '1.5', flex: 1 }}>{exhibitor.description}</p>
 

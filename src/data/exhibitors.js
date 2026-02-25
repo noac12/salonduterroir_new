@@ -2,7 +2,7 @@ export const categories = [
     //Thomas tu peux changer les catégories vu que tu connais mieux les exposants.
     "Vin",
     "Champagne",
-    "Viande et charcuterie",
+    "Viande et Charcuterie",
     "Fromage",
     "Spiritueux",
     "Autres produits",
@@ -14,7 +14,7 @@ export const exhibitors = [
     // {
     //     id: 1,
     //     name: "Nom de l'exposant",
-    //     category: "Vin",               // Une des catégories ci-dessus
+    //     category: "Vin",               // Une des catégories ci-dessus, ou bien un tableau : ["Vin", "Spiritueux"]
     //     region: "Région d'origine",
     //     description: "Description courte de l'exposant.",
     //     website: "https://www.example.com",  // URL du site web (optionnel)
@@ -173,7 +173,7 @@ export const exhibitors = [
         "website": "www.cavegogue.fr",
         "logo": null
     },
-    // {
+    //    {
     //     "id": 18,
     //     "name": "Inconnu",
     //     "category": "nougat",
@@ -182,15 +182,16 @@ export const exhibitors = [
     //     "website": "",
     //     "logo": null
     // },
-    // {
-    //     "id": 19,
-    //     "name": "cedric corses",
-    //     "category": "produit corse",
-    //     "region": "",
-    //     "description": "",
-    //     "website": "",
-    //     "logo": null
-    // },
+    {
+        "id": 19,
+        "name": "Cédric corses",
+        "category": ["Vin", "Fromage", "Viande et Charcuterie"],
+        "region": "Corse",
+        "description": "Producteur de vins, fromages et charcuteries corses",
+        "website": "",
+        "logo": null
+    },
+
     {
         "id": 20,
         "name": "Maison Romy",
