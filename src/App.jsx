@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Exhibitors from './pages/Exhibitors';
 import Services from './pages/Services';
+import Partners from './pages/Partners';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/exhibitors" element={<Exhibitors />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/partenaires" element={<Partners />} />
         </Routes>
         <Footer />
       </div>
