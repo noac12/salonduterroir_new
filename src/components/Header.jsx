@@ -18,7 +18,7 @@ const Header = () => {
         <div className="logo">
           <Link to="/" className="logo-link" onClick={closeMenu}>
             Salon du Terroir
-            <span className="subtitle">Télécom Paris</span>
+            <span className="subtitle">Télécom Paris - Grande École d'Ingénieurs</span>
           </Link>
         </div>
 

@@ -35,7 +35,7 @@ export const exhibitors = [
         "category": "Autres produits",
         "region": "Dordogne",
         "description": "Producteur de châtaignes en Dordogne",
-        "website": "",
+        "website": "https://www.producteur-chataignes-varaignes.fr/",
         "logo": null
     },
     {
@@ -58,11 +58,11 @@ export const exhibitors = [
     },
     {
         "id": 5,
-        "name": "Vignobles Merlet",
+        "name": "Château Les Gazelles",
         "category": "Vin",
         "region": "Bordeaux",
-        "description": "Producteur de vin dans la région de Bordeaux",
-        "website": "https://www.scea-vignobles-merlet.net/fr/",
+        "description": "Producteur de Vins de Lalande-de-Pomerol, près de Saint-Émilion",
+        "website": "https://www.chateaulesgazelles.ovh/",
         "logo": null
     },
     {
@@ -184,11 +184,11 @@ export const exhibitors = [
     // },
     {
         "id": 19,
-        "name": "Cédric corses",
+        "name": "Corsicabreizh",
         "category": ["Vin", "Fromage", "Viande et Charcuterie"],
         "region": "Corse",
-        "description": "Producteur de vins, fromages et charcuteries corses",
-        "website": "",
+        "description": "Producteur de vins, fromages et charcuteries corses. Fromages issus de l'exploitation familiale à Penta Di Casinca. Charcuterie de La Castagniccia.",
+        "website": "https://www.corsicabreizh.com/",
         "logo": null
     },
 
