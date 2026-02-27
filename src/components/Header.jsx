@@ -52,7 +52,7 @@ const Header = () => {
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                 onClick={closeMenu}
               >
-                Nos Services
+                Services & Activités
               </NavLink>
             </li>
             <li><a href="/#access" className="nav-link" onClick={closeMenu}>Infos Pratiques</a></li>

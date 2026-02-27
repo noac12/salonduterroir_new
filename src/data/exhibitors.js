@@ -53,7 +53,7 @@ export const exhibitors = [
         "category": "Épicerie fine",
         "region": "Yvelines",
         "description": "Sélection de produits d'épicerie fine, épices et saveurs du monde.",
-        "website": "",
+        "website": "https://www.facebook.com/p/ZOE-Biomad-100050417334635/",
         "logo": null
     },
     {
@@ -105,7 +105,7 @@ export const exhibitors = [
         "id": 10,
         "name": "Bois de corail",
         "category": "Spiritueux",
-        "region": "",
+        "region": "Seine-et-Marne",
         "description": "Créateur de rhums arrangés",
         "website": "https://www.boisdecorail.fr/",
         "logo": null
@@ -116,7 +116,7 @@ export const exhibitors = [
         "category": "Épicerie fine",
         "region": "Essonne",
         "description": "Sélection raffinée de produits d'épicerie fine et condiments du monde.",
-        "website": "",
+        "website": "https://www.instagram.com/mesdelices.91/",
         "logo": null
     },
     {
@@ -196,7 +196,7 @@ export const exhibitors = [
         "id": 20,
         "name": "Maison Romy",
         "category": "Autres produits",
-        "region": "",
+        "region": "Seine-et-Marne",
         "description": "Pâtisseries fines, confiseries et produits d’épicerie fine artisanaux, ",
         "website": "https://maisonromy.com/",
         "logo": null
@@ -206,7 +206,7 @@ export const exhibitors = [
         "name": "Domaine du Trait Vert",
         "category": "Vin",
         "region": "Muscadet",
-        "description": "Producteur de Muscadet",
+        "description": "Le Domaine du Trait Vert cultive le Muscadet en biodynamie avec un profond respect du vivant. Sa philosophie privilégie la traction animale et les interventions naturelles pour exprimer la pureté du terroir.",
         "website": "https://www.domainedutraitvert.com/",
         "logo": null
     },

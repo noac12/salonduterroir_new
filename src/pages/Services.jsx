@@ -24,6 +24,13 @@ const services = [
         paragraphs: [
             'Essayez de deviner ce qui se cache dans ces verres !'
         ]
+    },
+    {
+        id: 'cheerleading-show',
+        title: 'Spectacle de cheerleading',
+        paragraphs: [
+            'L\'équipe de cheerleading de Télécom Paris, championne du GOST 2026, vous prépare un show à ne pas rater !'
+        ]
     }
 ];
 
