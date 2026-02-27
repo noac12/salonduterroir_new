@@ -125,7 +125,7 @@ export const exhibitors = [
         "category": "Autres produits",
         "region": "Essonne",
         "description": "Brasseur artisanal proposant une gamme de bières originales",
-        "website": "",
+        "website": "https://www.instagram.com/inkraftbeer/",
         "logo": null
     },
     {
