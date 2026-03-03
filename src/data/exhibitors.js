@@ -173,15 +173,15 @@ export const exhibitors = [
         "website": "www.cavegogue.fr",
         "logo": null
     },
-    //    {
-    //     "id": 18,
-    //     "name": "Inconnu",
-    //     "category": "nougat",
-    //     "region": "",
-    //     "description": "",
-    //     "website": "",
-    //     "logo": null
-    // },
+       {
+        "id": 18,
+        "name": "So'délices",
+        "category": "Autres produits",
+        "region": "Essonne",
+        "description": "Fabrication artisanale de nougat",
+        "website": "",
+        "logo": null
+    },
     {
         "id": 19,
         "name": "Corsicabreizh",
@@ -210,15 +210,15 @@ export const exhibitors = [
         "website": "https://www.domainedutraitvert.com/",
         "logo": null
     },
-    // {
-    //     "id": 22,
-    //     "name": "Inconnu",
-    //     "category": "empegnadas",
-    //     "region": "",
-    //     "description": "",
-    //     "website": "",
-    //     "logo": null
-    // },
+    {
+        "id": 22,
+        "name": "Gusto latino",
+        "category": "Autres produits",
+        "region": "Île-de-France",
+        "description": "Spécialiste de l'empanada artisanale",
+        "website": "",
+        "logo": null
+    },
     {
         "id": 23,
         "name": "Domaine Lou Gaillot",
@@ -228,31 +228,31 @@ export const exhibitors = [
         "website": "https://www.lougaillot.com/",
         "logo": null
     },
-    // {
-    //     "id": 24,
-    //     "name": "Inconnu",
-    //     "category": "madagascar",
-    //     "region": "",
-    //     "description": "",
-    //     "website": "",
-    //     "logo": null
-    // },
-    // {
-    //     "id": 25,
-    //     "name": "Inconnu",
-    //     "category": "fruit",
-    //     "region": "",
-    //     "description": "",
-    //     "website": "",
-    //     "logo": null
-    // },
-    // {
-    //     "id": 26,
-    //     "name": "Inconnu",
-    //     "category": "bretzel",
-    //     "region": "",
-    //     "description": "",
-    //     "website": "",
-    //     "logo": null
-    // },
+    {
+        "id": 24,
+        "name": "TIA Artisanal, Épice de Madagascar & Co",
+        "category": "Épicerie fine",
+        "region": "Île-de-France",
+        "description": "Sélection de produits artisanaux de Madagascar mais aussi de bijoux fantaisie, chaussures, textiles et accessoires de mode",
+        "website": "",
+        "logo": null
+    },
+    {
+        "id": 25,
+        "name": "Les Vergers de Cousancelles",
+        "category": "Autres produits",
+        "region": "Lorraine",
+        "description": "Producteur de fruits issus d'une agriculture biologique",
+        "website": "https://les-vergers-de-cousancelles.fr/",
+        "logo": null
+    },
+    {
+        "id": 26,
+        "name": "Terroirs & Traditions",
+        "category": "bretzel",
+        "region": "",
+        "description": "Spécialités artisanales: bretzels garnis salés et sucrés, ainsi que différentes douceurs sucrées",
+        "website": "https://terroirsettraditions.com/fr",
+        "logo": null
+    },
 ];
