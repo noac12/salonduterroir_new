@@ -178,7 +178,7 @@ export const exhibitors = [
         "name": "So'délices",
         "category": "Autres produits",
         "region": "Essonne",
-        "description": "Fabrication artisanale de nougat",
+        "description": "Gourmandises sucrées artisanales : nougat, pâtes à tartiner et petites douceurs "fait maison"",
         "website": "",
         "logo": null
     },
