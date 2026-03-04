@@ -224,7 +224,8 @@ export const exhibitors = [
         "name": "Domaine Lou Gaillot",
         "category": "Vin",
         "region": "Lot",
-        "description": "Producteur de vins de cépages du Bordelais et du Bergeracois",
+        "description": "Vins IGP Agenais BIO blanc, rosé et rouge.
+            Des créations originales: Vin pétillant houblonné, Bière de raisin.",
         "website": "https://www.lougaillot.com/",
         "logo": null
     },
