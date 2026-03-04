@@ -173,12 +173,12 @@ export const exhibitors = [
         "website": "www.cavegogue.fr",
         "logo": null
     },
-       {
+    {
         "id": 18,
         "name": "So'délices",
         "category": "Autres produits",
         "region": "Essonne",
-        "description": "Gourmandises sucrées artisanales : nougat, pâtes à tartiner et petites douceurs "fait maison"",
+        "description": "Gourmandises sucrées artisanales : nougat, pâtes à tartiner et petites douceurs \"fait maison\"",
         "website": "",
         "logo": null
     },
@@ -224,8 +224,7 @@ export const exhibitors = [
         "name": "Domaine Lou Gaillot",
         "category": "Vin",
         "region": "Lot",
-        "description": "Vins IGP Agenais BIO blanc, rosé et rouge.
-            Des créations originales: Vin pétillant houblonné, Bière de raisin.",
+        "description": "Vins IGP Agenais BIO blanc, rosé et rouge. Des créations originales: Vin pétillant houblonné, Bière de raisin.",
         "website": "https://www.lougaillot.com/",
         "logo": null
     },
