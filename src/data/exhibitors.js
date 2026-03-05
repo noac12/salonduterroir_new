@@ -106,7 +106,7 @@ export const exhibitors = [
         "name": "Bois de corail",
         "category": "Spiritueux",
         "region": "Seine-et-Marne",
-        "description": "Créateur de rhums arrangés",
+        "description": "Créateur de rhums arrangés. Découvrez nos recettes exotiques et originales 100% naturelles !",
         "website": "https://www.boisdecorail.fr/",
         "logo": null
     },
