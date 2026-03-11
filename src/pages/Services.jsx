@@ -10,15 +10,6 @@ const services = [
         ]
     },
     {
-        id: 'wine-quiz',
-        title: 'Concours d’œnologie',
-        paragraphs: [
-            'Vous souhaitez vérifier vos connaissances et les mesurer à celles des autres ?',
-            'Alors venez au concours d’œnologie : des lots attendent les meilleurs !',
-            'Attention, le nombre de places est limité.'
-        ]
-    },
-    {
         id: 'smell-workshop',
         title: 'Atelier des senteurs',
         paragraphs: [
