@@ -5,27 +5,27 @@ import RevealOnScroll from '../components/RevealOnScroll';
 const faqs = [
     {
         question: "En quoi consiste le Salon du Terroir de Télécom Paris ?",
-        answer: "Le Salon du Terroir de Télécom Paris est un événement convivial qui met à l’honneur des producteurs et artisans venus présenter leurs spécialités régionales. Les exposants proposent des dégustations pour faire découvrir la richesse de leurs produits et partager leur savoir-faire. Les visiteurs peuvent également acheter directement sur place les produits qu’ils ont appréciés. C’est un moment de découverte, d’échange et de gourmandise autour du patrimoine gastronomique."
+        answer: <>Le <b>Salon du Terroir de Télécom Paris</b> est un événement convivial qui met à l’honneur des producteurs et artisans venus présenter leurs spécialités régionales. Les exposants proposent des <b>dégustations</b> pour faire découvrir la richesse de leurs produits et partager leur savoir-faire. Les visiteurs peuvent également <b>acheter directement sur place</b> les produits qu’ils ont appréciés. C’est un moment de découverte, d’échange et de gourmandise autour du patrimoine gastronomique.</>
     },
     {
         question: "Quand et où se déroule le salon ?",
-        answer: "Le Salon du Terroir 2026 aura lieu les 27 et 28 mars 2026 dans le Grand Hall de Télécom Paris, situé à Palaiseau sur le plateau de Saclay."
+        answer: <>Le Salon du Terroir 2026 aura lieu les <b>27 (14h - 19h) et 28 mars 2026 (10h - 19h)</b> dans le <b>Grand Hall de Télécom Paris</b>, situé au <b>19 Place Marguerite Perey, 91120 Palaiseau</b> sur le plateau de Saclay.</>
     },
     {
         question: "L'entrée est-elle payante ?",
-        answer: <>L'entrée au salon est 100% gratuite ! Nous vous recommandons cependant de bien vouloir réserver votre place via notre <a href="/#billetterie" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>billetterie en ligne</a> afin de fluidifier l'accès.</>
+        answer: <>L'entrée au salon est <b>100% gratuite</b> ! Nous vous recommandons cependant de bien vouloir réserver votre place via notre <a href="https://www.helloasso.com/associations/salon-du-terroir/evenements/salon-du-terroir-2-1" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>billetterie en ligne</a> afin de fluidifier l'accès.</>
     },
     {
         question: "Qui sont les exposants ?",
-        answer: <>Nos exposants sont des producteurs et artisans venus présenter leurs spécialités régionales. Vous y trouverez des viticulteurs, des producteurs de charcuterie et fromages, des brasseurs, et bien d'autres encore. La liste complète des exposants est disponible sur la page <Link to="/exhibitors" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Exposants</Link>.</>
+        answer: <>Nos exposants sont des <b>producteurs et artisans</b> venus présenter leurs spécialités régionales. Vous y trouverez des viticulteurs, des producteurs de charcuterie et fromages, des brasseurs, et bien d'autres encore. La liste complète des exposants classés par catégories est disponible sur la page <Link to="/exhibitors" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Exposants</Link>.</>
     },
     {
         question: "Peut-on acheter les produits sur place ?",
-        answer: "Oui, tout à fait ! La majorité de nos exposants (viticulteurs, producteurs de charcuterie et fromages, brasseurs...) proposent la vente directe de leurs produits sur leurs stands."
+        answer: <>Oui, tout à fait ! Tous nos exposants (viticulteurs, producteurs de charcuterie et fromages, brasseurs...) proposent la <b>vente directe</b> de leurs produits sur leurs stands.</>
     },
     {
         question: "Comment se rendre à Télécom Paris ?",
-        answer: <>L'école est très facile d'accès en transports en commun (RER B Massy-Palaiseau puis bus) ou en voiture (plusieurs parkings gratuits à proximité). Consultez la rubrique <a href="/#access" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Infos Pratiques</a> pour tous les détails.</>
+        answer: <>L'école est très facile d'accès en <b>transports en commun</b> (RER B Massy-Palaiseau puis bus) ou en <b>voiture</b> (plusieurs parkings gratuits à proximité). Consultez la rubrique <a href="/#access" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Infos Pratiques</a> pour tous les détails.</>
     },
     {
         question: "Y a-t-il des activités spéciales ?",
