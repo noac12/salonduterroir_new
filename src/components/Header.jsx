@@ -64,7 +64,11 @@ const Header = () => {
                 FAQ
               </NavLink>
             </li>
-            <li><a href="/#access" className="nav-link" onClick={closeMenu}>Infos Pratiques</a></li>
+            <li>
+              <Link to="/#access" className="nav-link" onClick={closeMenu}>
+                Infos Pratiques
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
