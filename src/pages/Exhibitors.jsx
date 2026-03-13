@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ExhibitorCard from '../components/ExhibitorCard';
+import RevealOnScroll from '../components/RevealOnScroll';
 import { exhibitors, categories } from '../data/exhibitors';
 
 const Exhibitors = () => {
@@ -45,17 +46,19 @@ const Exhibitors = () => {
                 </div>
 
                 {/* Grid */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
-                    {filteredExhibitors.length > 0 ? (
-                        filteredExhibitors.map(exhibitor => (
-                            <ExhibitorCard key={exhibitor.id} exhibitor={exhibitor} />
-                        ))
-                    ) : (
-                        <p style={{ gridColumn: '1 / -1', textAlign: 'center', fontSize: '1.2rem', color: '#666' }}>
-                            Aucun exposant trouvé dans cette catégorie pour le moment.
-                        </p>
-                    )}
-                </div>
+                <RevealOnScroll>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
+                        {filteredExhibitors.length > 0 ? (
+                            filteredExhibitors.map(exhibitor => (
+                                <ExhibitorCard key={exhibitor.id} exhibitor={exhibitor} />
+                            ))
+                        ) : (
+                            <p style={{ gridColumn: '1 / -1', textAlign: 'center', fontSize: '1.2rem', color: '#666' }}>
+                                Aucun exposant trouvé dans cette catégorie pour le moment.
+                            </p>
+                        )}
+                    </div>
+                </RevealOnScroll>
 
                 {/* Contact Section */}
                 <div style={{ marginTop: '4rem', padding: '3rem', backgroundColor: 'var(--color-bg)', borderRadius: '8px', textAlign: 'center' }}>

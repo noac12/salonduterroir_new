@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import RevealOnScroll from '../components/RevealOnScroll';
 
 const services = [
     {
@@ -38,16 +39,18 @@ const Services = () => {
                     pleinement votre visite.
                 </p>
 
-                <div className="services-grid">
-                    {services.map((service) => (
-                        <article key={service.id} className="service-card">
-                            <h2 className="service-title">{service.title}</h2>
-                            {service.paragraphs.map((paragraph, index) => (
-                                <p key={`${service.id}-${index}`}>{paragraph}</p>
-                            ))}
-                        </article>
-                    ))}
-                </div>
+                <RevealOnScroll>
+                    <div className="services-grid">
+                        {services.map((service) => (
+                            <article key={service.id} className="service-card">
+                                <h2 className="service-title">{service.title}</h2>
+                                {service.paragraphs.map((paragraph, index) => (
+                                    <p key={`${service.id}-${index}`}>{paragraph}</p>
+                                ))}
+                            </article>
+                        ))}
+                    </div>
+                </RevealOnScroll>
 
                 <p className="services-note">D&apos;autres activités vous attendent, pour les grands et les petits !</p>
             </div>

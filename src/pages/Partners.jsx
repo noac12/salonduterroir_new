@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import RevealOnScroll from '../components/RevealOnScroll';
 
 // Imports des logos partenaires
 import logoBde from '../assets/logos_partenaires/logo_bde.png';
@@ -28,17 +29,19 @@ const Partners = () => {
                     Le Salon du Terroir de Télécom Paris est rendu possible grâce au soutien exceptionnel de nos partenaires. Nous tenons à les remercier chaleureusement pour leur engagement et leur aide précieuse.
                 </p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '4rem', alignItems: 'center', justifyItems: 'center', width: '100%', maxWidth: '1000px', backgroundColor: '#fff', padding: '3rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
-                    {partners.map((partner) => (
-                        <div key={partner.id} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px', width: '100%' }}>
-                            <img
-                                src={partner.src}
-                                alt={partner.alt}
-                                style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
-                            />
-                        </div>
-                    ))}
-                </div>
+                <RevealOnScroll>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '4rem', alignItems: 'center', justifyItems: 'center', width: '100%', maxWidth: '1000px', backgroundColor: '#fff', padding: '3rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+                        {partners.map((partner) => (
+                            <div key={partner.id} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px', width: '100%' }}>
+                                <img
+                                    src={partner.src}
+                                    alt={partner.alt}
+                                    style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </RevealOnScroll>
             </div>
         </main>
     );
