@@ -30,9 +30,9 @@ const Partners = () => {
                 </p>
 
                 <RevealOnScroll>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '4rem', alignItems: 'center', justifyItems: 'center', width: '100%', maxWidth: '1000px', backgroundColor: '#fff', padding: '3rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
+                    <div className="partners-grid">
                         {partners.map((partner) => (
-                            <div key={partner.id} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '120px', width: '100%' }}>
+                            <div key={partner.id} className="partner-logo-wrapper">
                                 <img
                                     src={partner.src}
                                     alt={partner.alt}
