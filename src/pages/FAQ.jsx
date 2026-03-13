@@ -51,16 +51,16 @@ const FAQItem = ({ question, answer }) => {
                 </span>
             </div>
             <div style={{
-                maxHeight: isOpen ? '200px' : '0',
-                overflow: 'hidden',
-                transition: 'max-height 0.3s ease-in-out',
-                opacity: isOpen ? 1 : 0,
-                transitionProperty: 'max-height, opacity',
-                transitionDuration: '0.3s'
+                display: 'grid',
+                gridTemplateRows: isOpen ? '1fr' : '0fr',
+                transition: 'grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out',
+                opacity: isOpen ? 1 : 0
             }}>
-                <p style={{ marginTop: '1rem', color: '#555', lineHeight: '1.6' }}>
-                    {answer}
-                </p>
+                <div style={{ overflow: 'hidden' }}>
+                    <p style={{ marginTop: '1rem', color: '#555', lineHeight: '1.6' }}>
+                        {answer}
+                    </p>
+                </div>
             </div>
         </div>
     );
