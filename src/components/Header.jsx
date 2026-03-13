@@ -55,6 +55,15 @@ const Header = () => {
                 Services & Activités
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/faq"
+                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                onClick={closeMenu}
+              >
+                FAQ
+              </NavLink>
+            </li>
             <li><a href="/#access" className="nav-link" onClick={closeMenu}>Infos Pratiques</a></li>
           </ul>
         </nav>

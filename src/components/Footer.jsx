@@ -12,6 +12,9 @@ const Footer = () => {
                     <p style={{ marginTop: '1.5rem', fontWeight: 'bold' }}>
                         <Link to="/partenaires" style={{ color: 'inherit', textDecoration: 'underline' }}>Voir nos partenaires</Link>
                     </p>
+                    <p style={{ marginTop: '0.5rem', fontWeight: 'bold' }}>
+                        <Link to="/faq" style={{ color: 'inherit', textDecoration: 'underline' }}>Consulter la FAQ</Link>
+                    </p>
                 </div>
                 <div className="footer-column">
                     <h4 className="footer-subheading">Contact</h4>
