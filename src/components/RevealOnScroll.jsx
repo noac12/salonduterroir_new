@@ -13,7 +13,7 @@ const RevealOnScroll = ({ children }) => {
                 }
             },
             {
-                threshold: 0.15, // Trigger when 15% is visible
+                threshold: 0, // Trigger as soon as it enters (fixes issue with elements taller than viewport)
                 rootMargin: '0px 0px -50px 0px' // Trigger slightly before it hits the true bottom
             }
         );
