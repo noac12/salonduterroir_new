@@ -491,6 +491,10 @@ img {
     flex-direction: column;
     text-align: center;
   }
+
+  .footer-socials {
+    justify-content: center;
+  }
 }
 
 /* Scroll Reveal Animations */
