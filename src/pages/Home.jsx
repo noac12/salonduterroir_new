@@ -95,7 +95,7 @@ const Home = () => {
                         </div>
                     </div>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.268987473775!2d2.198946776893674!3d48.71318717131336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e678917855013d%3A0x63319028889417!2s19%20Pl.%20Marguerite%20Perey%2C%2091120%20Palaiseau!5e0!3m2!1sen!2sfr!4v1709200000000!5m2!1sen!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.6213890260506!2d2.1973744390065373!3d48.71271713908798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67936019b92fb%3A0x3b189d16d136fa9!2sSalon%20Du%20Terroir!5e0!3m2!1sfr!2sfr!4v1773435528116!5m2!1sfr!2sfr"
                         width="100%"
                         height="400"
                         style={{ border: 0, borderRadius: '8px' }}

@@ -7,9 +7,10 @@ const HeroSection = () => {
         <section className="hero">
             <div className="container hero-content">
                 <h1 className="hero-title">Salon du Terroir 2026</h1>
-                <p className="hero-subtitle">Le rendez-vous incontournable des saveurs de nos régions.</p>
+                <p className="hero-subtitle">Le rendez-vous incontournable des saveurs de nos régions.
+                </p>
 
-                <Countdown targetDate="2026-03-27T10:00:00" />
+                <Countdown targetDate="2026-03-27T14:00:00" />
                 <div className="hero-buttons">
                     <Link to="/exhibitors" className="btn hero-btn">
                         Découvrir les Exposants
