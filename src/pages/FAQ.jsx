@@ -1,14 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import RevealOnScroll from '../components/RevealOnScroll';
 
 const faqs = [
+    {
+        question: "En quoi consiste le Salon du Terroir de Télécom Paris ?",
+        answer: "Le Salon du Terroir de Télécom Paris est un événement convivial qui met à l’honneur des producteurs et artisans venus présenter leurs spécialités régionales. Les exposants proposent des dégustations pour faire découvrir la richesse de leurs produits et partager leur savoir-faire. Les visiteurs peuvent également acheter directement sur place les produits qu’ils ont appréciés. C’est un moment de découverte, d’échange et de gourmandise autour du patrimoine gastronomique."
+    },
     {
         question: "Quand et où se déroule le salon ?",
         answer: "Le Salon du Terroir 2026 aura lieu les 27 et 28 mars 2026 dans le Grand Hall de Télécom Paris, situé à Palaiseau sur le plateau de Saclay."
     },
     {
         question: "L'entrée est-elle payante ?",
-        answer: "L'entrée au salon est 100% gratuite ! Nous vous demandons cependant de bien vouloir réserver votre place via notre billetterie HelloAsso en ligne afin de fluidifier l'accès."
+        answer: <>L'entrée au salon est 100% gratuite ! Nous vous recommandons cependant de bien vouloir réserver votre place via notre <a href="/#billetterie" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>billetterie en ligne</a> afin de fluidifier l'accès.</>
+    },
+    {
+        question: "Qui sont les exposants ?",
+        answer: <>Nos exposants sont des producteurs et artisans venus présenter leurs spécialités régionales. Vous y trouverez des viticulteurs, des producteurs de charcuterie et fromages, des brasseurs, et bien d'autres encore. La liste complète des exposants est disponible sur la page <Link to="/exhibitors" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Exposants</Link>.</>
     },
     {
         question: "Peut-on acheter les produits sur place ?",
@@ -16,11 +25,11 @@ const faqs = [
     },
     {
         question: "Comment se rendre à Télécom Paris ?",
-        answer: "L'école est très facile d'accès en transports en commun (RER B Massy-Palaiseau puis bus) ou en voiture (plusieurs parkings gratuits à proximité). Consultez la rubrique 'Infos Pratiques' pour tous les détails."
+        answer: <>L'école est très facile d'accès en transports en commun (RER B Massy-Palaiseau puis bus) ou en voiture (plusieurs parkings gratuits à proximité). Consultez la rubrique <a href="/#access" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Infos Pratiques</a> pour tous les détails.</>
     },
     {
         question: "Y a-t-il des activités spéciales ?",
-        answer: "Oui ! En plus des dégustations classiques, nous proposons des activités comme l'Atelier des senteurs et des spectacles. N'hésitez pas à consulter notre page 'Services & Activités'."
+        answer: <>Oui ! En plus des dégustations classiques, nous proposons des activités comme l'Atelier des senteurs et des spectacles. N'hésitez pas à consulter notre page <Link to="/services" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Services & Activités</Link>.</>
     }
 ];
 
