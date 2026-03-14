@@ -1,3 +1,5 @@
+import zoeBiomadPdf from '../assets/ZOE BIOMAD_260314_123303.pdf';
+
 export const categories = [
     //Thomas tu peux changer les catégories vu que tu connais mieux les exposants.
     "Vin",
@@ -53,7 +55,7 @@ export const exhibitors = [
         "category": "Épicerie fine",
         "region": "Yvelines",
         "description": "Sélection de produits d'épicerie fine, épices et saveurs du monde.",
-        "website": "https://www.facebook.com/p/ZOE-Biomad-100050417334635/",
+        "website": zoeBiomadPdf,
         "logo": null
     },
     {
