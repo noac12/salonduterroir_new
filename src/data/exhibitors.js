@@ -172,7 +172,7 @@ export const exhibitors = [
         "category": "Vin",
         "region": "Centre Val de Loire",
         "description": "Producteur de Sauvignon et de Pinôt Noir",
-        "website": "www.cavegogue.fr",
+        "website": "http://www.cavegogue.fr",
         "logo": null
     },
     {
