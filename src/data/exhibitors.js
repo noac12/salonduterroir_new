@@ -257,4 +257,13 @@ export const exhibitors = [
         "website": "https://terroirsettraditions.com/fr",
         "logo": null
     },
+    {
+        "id": 27,
+        "name": "Domaine Schlegel Boeglin",
+        "category": "Vin",
+        "region": "Alsace",
+        "description": "Domaine viticole familial proposant une large gamme de vins d’Alsace : Edelzwicker, Sylvaner, Crémant d’Alsace, Riesling, Gewurztraminer, Pinot Noir, Pinot Gris, Pinot Blanc…",
+        "website": "https://schlegel-boeglin.fr/",
+        "logo": null
+    },
 ];
