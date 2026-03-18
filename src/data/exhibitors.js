@@ -171,7 +171,7 @@ export const exhibitors = [
         "name": "Domaine Gogué",
         "category": "Vin",
         "region": "Centre Val de Loire",
-        "description": "Producteur de Sauvignon et de Pinôt Noir",
+        "description": "Producteur de Sauvignon et de Pinot Noir de Ménetou-Salon",
         "website": "http://www.cavegogue.fr",
         "logo": null
     },
