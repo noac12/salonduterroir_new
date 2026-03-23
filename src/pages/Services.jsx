@@ -23,6 +23,15 @@ const services = [
         paragraphs: [
             'L\'équipe de cheerleading de Télécom Paris, championne du GOST 2026, vous prépare un show à ne pas rater !'
         ]
+    },
+    {
+        id: 'groupe-bernier',
+        title: 'Exposition de véhicules',
+        paragraphs: [
+            <>Le <a href="https://www.groupe-bernier.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Groupe Bernier</a> viendra exposer ses véhicules sur place :</>,
+            <>• <b>VP</b> : Nouvelle 308 et Nouveau E-3008</>,
+            <>• <b>VU</b> : E-Partner et Expert</>
+        ]
     }
 ];
 
