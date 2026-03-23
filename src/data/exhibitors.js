@@ -8,7 +8,8 @@ export const categories = [
     "Fromage",
     "Spiritueux",
     "Autres produits",
-    "Épicerie fine"
+    "Épicerie fine",
+    "Association"
 ];
 
 export const exhibitors = [
@@ -266,4 +267,13 @@ export const exhibitors = [
         "website": "https://schlegel-boeglin.fr/",
         "logo": null
     },
+    {
+        "id": 28,
+        "name": "Les Blouses Roses",
+        "category": "Association",
+        "region": "France",
+        "description": "Présentation de l'association et recueil de dons. Distraire les malades et apporter des moments de bonheur.",
+        "website": "https://www.lesblousesroses.asso.fr/fr/",
+        "logo": null
+    }
 ];
