@@ -64,7 +64,7 @@ const Exhibitors = () => {
                 <div style={{ marginTop: '4rem', padding: '3rem', backgroundColor: 'var(--color-bg)', borderRadius: '8px', textAlign: 'center' }}>
                     <h3 style={{ marginBottom: '1rem', color: 'var(--color-primary)' }}>Vous souhaitez exposer ?</h3>
                     <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>
-                        Il reste encore quelques places disponibles pour notre édition 2026.
+                        Il n'y a plus de place pour notre édition 2026, mais vous pouvez d'ores et déjà nous contacter pour l'édition 2027.
                     </p>
                     <a href="mailto:contact@salonduterroir.fr" className="btn">
                         Contactez-nous à contact@salonduterroir.fr
