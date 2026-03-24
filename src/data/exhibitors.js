@@ -173,7 +173,7 @@ export const exhibitors = [
         "category": "Vin",
         "region": "Centre Val de Loire",
         "description": "Producteur de Sauvignon et de Pinot Noir de Ménetou-Salon",
-        "website": "http://www.cavegogue.fr",
+        "website": "",
         "logo": null
     },
     {
