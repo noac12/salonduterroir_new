@@ -277,7 +277,7 @@ export const exhibitors = [
         "logo": null
     },
     {
-        "id": 28,
+        "id": 29,
         "name": "Gloria Kora",
         "category": "Épicerie fine",
         "region": "Bénin",
