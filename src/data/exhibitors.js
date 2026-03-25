@@ -275,5 +275,14 @@ export const exhibitors = [
         "description": "Présentation de l'association et recueil de dons. Distraire les malades et apporter des moments de bonheur.",
         "website": "https://www.lesblousesroses.asso.fr/fr/",
         "logo": null
+    },
+    {
+        "id": 28,
+        "name": "Gloria Kora",
+        "category": "Épicerie fine",
+        "region": "Bénin",
+        "description": "Produits d'exception du Bénin : du café épicé au beurre de karité en passant par le jus d'hibiscus",
+        "website": "",
+        "logo": null
     }
 ];
