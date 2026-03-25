@@ -284,5 +284,23 @@ export const exhibitors = [
         "description": "Produits d'exception du Bénin : du café épicé au beurre de karité en passant par le jus d'hibiscus",
         "website": "",
         "logo": null
+    },
+    {
+        "id": 30,
+        "name": "Parezanin/Ô Comptoir Des Gourmands",
+        "category": "Viande et Charcuterie",
+        "region": "Essonne",
+        "description": "Rôtisserie/Charcuterie/Conserverie/Traiteur",
+        "website": "",
+        "logo": null
+    },
+    {
+        "id": 31,
+        "name": "FIFI & BOUTIN",
+        "category": "Viande et Charcuterie",
+        "region": "",
+        "description": "Sirops de fruits frais exotiques",
+        "website": "https://fifietboutin.fr/",
+        "logo": null
     }
 ];
