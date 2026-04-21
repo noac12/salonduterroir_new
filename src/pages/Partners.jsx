@@ -7,6 +7,7 @@ import logoForum from '../assets/logos_partenaires/logo_forum.jpg';
 import logoIpp from '../assets/logos_partenaires/logo-institut-polytechnique-paris.png';
 import logoCvec from '../assets/logos_partenaires/CVEC1_finance_par_rvb.png';
 import logoTelecom from '../assets/logos_partenaires/TelecomParis_endossem_IPP_RVB_200pix.png';
+import logoVersaille from '../assets/logos_partenaires/logo_versaille.jpg';
 
 const Partners = () => {
     useEffect(() => {
@@ -19,6 +20,7 @@ const Partners = () => {
         { id: 'cvec', src: logoCvec, alt: 'CVEC' },
         { id: 'bde', src: logoBde, alt: 'BDE Télécom Paris' },
         { id: 'forum', src: logoForum, alt: 'Forum Télécom Paris' },
+        { id: 'versailles', src: logoVersaille, alt: 'Versailles' },
     ];
 
     return (
