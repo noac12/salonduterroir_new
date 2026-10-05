@@ -19,6 +19,7 @@ const services = [
     },
     {
         id: 'cheerleading-show',
+        active: false,
         title: 'Spectacle de cheerleading',
         paragraphs: [
             'L\'équipe de cheerleading de Télécom Paris, championne du GOST 2026, vous prépare un show à ne pas rater !'
@@ -26,6 +27,7 @@ const services = [
     },
     {
         id: 'groupe-bernier',
+        active: false,
         title: 'Exposition de véhicules',
         paragraphs: [
             <>Le <a href="https://www.groupe-bernier.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Groupe Bernier</a> viendra exposer ses véhicules sur place :</>,
@@ -50,7 +52,7 @@ const Services = () => {
 
                 <RevealOnScroll>
                     <div className="services-grid">
-                        {services.map((service) => (
+                        {services.filter((service) => service.active !== false).map((service) => (
                             <article key={service.id} className="service-card">
                                 <h2 className="service-title">{service.title}</h2>
                                 {service.paragraphs.map((paragraph, index) => (
