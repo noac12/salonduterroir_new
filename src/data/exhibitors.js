@@ -22,6 +22,7 @@ export const exhibitors = [
     //     description: "Description courte de l'exposant.",
     //     website: "https://www.example.com",  // URL du site web (optionnel)
     //     logo: "/logos/nom-exposant.png"       // Chemin vers le logo (optionnel). Ici, /logos/nom-exposant.png veut dire public//logos/nom-exposant.png
+    //     active: false                         // Optionnel : masque l'exposant du site sans le supprimer
     // },
     {
         "id": 1,
@@ -57,7 +58,8 @@ export const exhibitors = [
         "region": "Yvelines",
         "description": "Sélection de produits d'épicerie fine, épices et saveurs du monde.",
         "website": zoeBiomadPdf,
-        "logo": null
+        "logo": null,
+        "active": false
     },
     {
         "id": 5,
@@ -156,7 +158,8 @@ export const exhibitors = [
         "region": "Essonne",
         "description": "Apiculteur récoltant proposant des miels naturels et produits de la ruche.",
         "website": "https://apihappy.fr",
-        "logo": null
+        "logo": null,
+        "active": false
     },
     {
         "id": 16,
@@ -183,7 +186,8 @@ export const exhibitors = [
         "region": "Essonne",
         "description": "Gourmandises sucrées artisanales : nougat, pâtes à tartiner et petites douceurs \"fait maison\"",
         "website": "",
-        "logo": null
+        "logo": null,
+        "active": false
     },
     {
         "id": 19,
@@ -256,7 +260,8 @@ export const exhibitors = [
         "region": "",
         "description": "Spécialités artisanales: bretzels garnis salés et sucrés, ainsi que différentes douceurs sucrées",
         "website": "https://terroirsettraditions.com/fr",
-        "logo": null
+        "logo": null,
+        "active": false
     },
     {
         "id": 27,
@@ -274,7 +279,8 @@ export const exhibitors = [
         "region": "France",
         "description": "Présentation de l'association et recueil de dons. Distraire les malades et apporter des moments de bonheur.",
         "website": "https://www.lesblousesroses.asso.fr/fr/",
-        "logo": null
+        "logo": null,
+        "active": false
     },
     {
         "id": 29,

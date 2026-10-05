@@ -10,9 +10,14 @@ const Exhibitors = () => {
         document.title = 'Exposants | Salon du Terroir 2027 – Télécom Paris';
     }, []);
 
+    const activeExhibitors = exhibitors.filter(exhibitor => exhibitor.active !== false);
+    const activeCategories = categories.filter(category =>
+        activeExhibitors.some(e => Array.isArray(e.category) ? e.category.includes(category) : e.category === category)
+    );
+
     const filteredExhibitors = selectedCategory === 'Toutes'
-        ? exhibitors
-        : exhibitors.filter(exhibitor => {
+        ? activeExhibitors
+        : activeExhibitors.filter(exhibitor => {
             if (Array.isArray(exhibitor.category)) {
                 return exhibitor.category.includes(selectedCategory);
             }
@@ -22,7 +27,7 @@ const Exhibitors = () => {
     return (
         <main className="exhibitors-page">
             <div className="container">
-                <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>Nos Exposants 2026</h1>
+                <h1 style={{ textAlign: 'center', marginBottom: '3rem' }}>Nos Exposants 2027</h1>
 
                 {/* Filters */}
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginBottom: '3rem' }}>
@@ -33,7 +38,7 @@ const Exhibitors = () => {
                     >
                         Toutes
                     </button>
-                    {categories.map(category => (
+                    {activeCategories.map(category => (
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
