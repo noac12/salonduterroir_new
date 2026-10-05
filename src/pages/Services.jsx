@@ -37,7 +37,7 @@ const services = [
 
 const Services = () => {
     useEffect(() => {
-        document.title = 'Services & Activités | Salon du Terroir 2026 – Télécom Paris';
+        document.title = 'Services & Activités | Salon du Terroir 2027 – Télécom Paris';
     }, []);
     return (
         <main className="services-page">

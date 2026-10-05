@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import RevealOnScroll from '../components/RevealOnScroll';
+import { SHOW_TICKETING } from '../data/config';
 
 const Home = () => {
     useEffect(() => {
-        document.title = 'Salon du Terroir 2026 | Télécom Paris – Vin, Gastronomie et Artisanat';
+        document.title = 'Salon du Terroir 2027 | Télécom Paris – Vin, Gastronomie et Artisanat';
     }, []);
 
     useEffect(() => {
@@ -26,25 +27,27 @@ const Home = () => {
                 <InfoSection />
             </RevealOnScroll>
 
-            <RevealOnScroll>
-                <section id="billetterie" style={{ padding: '4rem 0', textAlign: 'center', backgroundColor: 'var(--color-bg)' }}>
-                    <div className="container">
-                        <h2 style={{ marginBottom: '1rem' }}>Billetterie Gratuite</h2>
-                        <p style={{ maxWidth: '600px', margin: '0 auto 2rem', color: 'var(--color-secondary)' }}>
-                            Réservez vos places dès maintenant sur HelloAsso.
-                        </p>
-                        <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <iframe
-                                id="haWidget"
-                                allowTransparency="true"
-                                src="https://www.helloasso.com/associations/salon-du-terroir/evenements/salon-du-terroir-2-1/widget-vignette"
-                                style={{ width: '350px', border: 'none', borderRadius: '8px' }}
-                                title="Billetterie HelloAsso"
-                            ></iframe>
+            {SHOW_TICKETING && (
+                <RevealOnScroll>
+                    <section id="billetterie" style={{ padding: '4rem 0', textAlign: 'center', backgroundColor: 'var(--color-bg)' }}>
+                        <div className="container">
+                            <h2 style={{ marginBottom: '1rem' }}>Billetterie Gratuite</h2>
+                            <p style={{ maxWidth: '600px', margin: '0 auto 2rem', color: 'var(--color-secondary)' }}>
+                                Réservez vos places dès maintenant sur HelloAsso.
+                            </p>
+                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                <iframe
+                                    id="haWidget"
+                                    allowTransparency="true"
+                                    src="https://www.helloasso.com/associations/salon-du-terroir/evenements/salon-du-terroir-2-1/widget-vignette"
+                                    style={{ width: '350px', border: 'none', borderRadius: '8px' }}
+                                    title="Billetterie HelloAsso"
+                                ></iframe>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </RevealOnScroll>
+                    </section>
+                </RevealOnScroll>
+            )}
 
             <RevealOnScroll>
                 <section id="access" style={{ padding: '4rem 0', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>

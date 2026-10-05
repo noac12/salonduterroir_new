@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import RevealOnScroll from '../components/RevealOnScroll';
+import { SHOW_TICKETING } from '../data/config';
 
 const faqs = [
     {
@@ -9,11 +10,11 @@ const faqs = [
     },
     {
         question: "Quand et où se déroule le salon ?",
-        answer: <>Le Salon du Terroir 2026 aura lieu les <b>27 (14h - 19h) et 28 mars 2026 (10h - 19h)</b> dans le <b>Grand Hall de Télécom Paris</b>, situé au <b>19 Place Marguerite Perey, 91120 Palaiseau</b> sur le plateau de Saclay.</>
+        answer: <>Le Salon du Terroir 2027 aura lieu les <b>12 (14h - 19h) et 13 mars 2027 (10h - 19h)</b> dans le <b>Grand Hall de Télécom Paris</b>, situé au <b>19 Place Marguerite Perey, 91120 Palaiseau</b> sur le plateau de Saclay.</>
     },
     {
         question: "L'entrée est-elle payante ?",
-        answer: <>L'entrée au salon est <b>100% gratuite</b> ! Nous vous recommandons cependant de bien vouloir réserver votre place via notre <a href="https://www.helloasso.com/associations/salon-du-terroir/evenements/salon-du-terroir-2-1" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>billetterie en ligne</a> afin de fluidifier l'accès.</>
+        answer: <>L'entrée au salon est <b>100% gratuite</b> !{SHOW_TICKETING && <> Nous vous recommandons cependant de bien vouloir réserver votre place via notre <a href="https://www.helloasso.com/associations/salon-du-terroir/evenements/salon-du-terroir-2-1" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>billetterie en ligne</a> afin de fluidifier l'accès.</>}</>
     },
     {
         question: "Qui sont les exposants ?",
@@ -68,7 +69,7 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = () => {
     useEffect(() => {
-        document.title = 'Foire Aux Questions (FAQ) | Salon du Terroir 2026';
+        document.title = 'Foire Aux Questions (FAQ) | Salon du Terroir 2027';
     }, []);
 
     return (

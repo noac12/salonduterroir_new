@@ -11,7 +11,7 @@ import logoVersaille from '../assets/logos_partenaires/logo_versaille.jpg';
 
 const Partners = () => {
     useEffect(() => {
-        document.title = 'Partenaires | Salon du Terroir 2026 – Télécom Paris';
+        document.title = 'Partenaires | Salon du Terroir 2027 – Télécom Paris';
     }, []);
 
     const partners = [

@@ -3,7 +3,7 @@ import RevealOnScroll from '../components/RevealOnScroll';
 
 const MentionsLegales = () => {
     useEffect(() => {
-        document.title = 'Mentions Légales | Salon du Terroir 2026 – Télécom Paris';
+        document.title = 'Mentions Légales | Salon du Terroir 2027 – Télécom Paris';
     }, []);
 
     return (

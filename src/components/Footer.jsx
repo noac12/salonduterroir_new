@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-column" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <p>&copy; 2026 Salon du Terroir – Télécom Paris. Tous droits réservés.</p>
+                    <p>&copy; 2027 Salon du Terroir – Télécom Paris. Tous droits réservés.</p>
                     <p>
                         <Link to="/mentions-legales" style={{ color: 'inherit', textDecoration: 'underline', fontSize: '0.9rem', opacity: 0.8 }}>Mentions Légales</Link>
                     </p>
