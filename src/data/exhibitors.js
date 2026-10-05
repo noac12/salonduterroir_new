@@ -26,6 +26,7 @@ export const exhibitors = [
     // },
     {
         "id": 1,
+        "active": false,
         "name": "Choco & Co",
         "category": "Autres produits",
         "region": "Essonne",
@@ -44,6 +45,7 @@ export const exhibitors = [
     },
     {
         "id": 3,
+        "active": false,
         "name": "Château Le Brézéguet",
         "category": "Vin",
         "region": "Lot",
@@ -72,6 +74,7 @@ export const exhibitors = [
     },
     {
         "id": 6,
+        "active": false,
         "name": "Frenchic Attitude",
         "category": "Épicerie fine",
         "region": "",
@@ -99,6 +102,7 @@ export const exhibitors = [
     },
     {
         "id": 9,
+        "active": false,
         "name": "Champagne Brimont & Fils",
         "category": "Champagne",
         "region": "Reims",
@@ -126,6 +130,7 @@ export const exhibitors = [
     },
     {
         "id": 12,
+        "active": false,
         "name": "Inkraft Beer Company",
         "category": "Autres produits",
         "region": "Essonne",
@@ -144,6 +149,7 @@ export const exhibitors = [
     },
     {
         "id": 14,
+        "active": false,
         "name": "Domaine Tour Scala",
         "category": "Vin",
         "region": "Aude",
@@ -172,6 +178,7 @@ export const exhibitors = [
     },
     {
         "id": 17,
+        "active": false,
         "name": "Domaine Gogué",
         "category": "Vin",
         "region": "Centre Val de Loire",
@@ -191,6 +198,7 @@ export const exhibitors = [
     },
     {
         "id": 19,
+        "active": false,
         "name": "Corsicabreizh",
         "category": ["Vin", "Fromage", "Viande et Charcuterie"],
         "region": "Corse",
@@ -201,6 +209,7 @@ export const exhibitors = [
 
     {
         "id": 20,
+        "active": false,
         "name": "Maison Romy",
         "category": "Autres produits",
         "region": "Seine-et-Marne",
@@ -210,6 +219,7 @@ export const exhibitors = [
     },
     {
         "id": 21,
+        "active": false,
         "name": "Domaine du Trait Vert",
         "category": "Vin",
         "region": "Muscadet",
@@ -228,6 +238,7 @@ export const exhibitors = [
     },
     {
         "id": 23,
+        "active": false,
         "name": "Domaine Lou Gaillot",
         "category": "Vin",
         "region": "Lot",
@@ -237,6 +248,7 @@ export const exhibitors = [
     },
     {
         "id": 24,
+        "active": false,
         "name": "TIA Artisanal, Épice de Madagascar & Co",
         "category": "Épicerie fine",
         "region": "Île-de-France",
@@ -246,6 +258,7 @@ export const exhibitors = [
     },
     {
         "id": 25,
+        "active": false,
         "name": "Les Vergers de Cousancelles",
         "category": "Autres produits",
         "region": "Lorraine",
@@ -284,6 +297,7 @@ export const exhibitors = [
     },
     {
         "id": 29,
+        "active": false,
         "name": "Gloria Kora",
         "category": "Épicerie fine",
         "region": "Bénin",
@@ -302,6 +316,7 @@ export const exhibitors = [
     },
     {
         "id": 31,
+        "active": false,
         "name": "FIFI & BOUTIN",
         "category": "Viande et Charcuterie",
         "region": "",
